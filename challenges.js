@@ -20,6 +20,12 @@ const fruits = ["apple", "banana", "orange"];
 
 // ✍️ Solve it here ✍️
 
+fruits.push("mango");
+fruits.shift();
+console.log(fruits);
+console.log(fruits.length);
+
+
 
 
 
@@ -39,6 +45,10 @@ const cities = ["Mogadishu", "Hargeisa", "Bosaso", "Garowe"];
 
 // ✍️ Solve it here ✍️
 
+cities.forEach((item,index)=>{
+   console.log(`${index} : ${item}`);
+   
+})
 
 
 
@@ -52,6 +62,21 @@ const cities = ["Mogadishu", "Hargeisa", "Bosaso", "Garowe"];
    ------------------------------------------------------------ */
 
 // ✍️ Solve it here ✍️
+
+let student = {
+   name: "abdala",
+   age: 23,
+   isEnRolled: true
+}
+
+console.log(student.name);
+
+// student.age= student.age + 1;  
+// or
+
+student.age = 24
+console.log(student);
+
 
 
 
@@ -73,6 +98,14 @@ const students = [
 
 // ✍️ Solve it here ✍️
 
+students.forEach((st)=>{
+   console.log(`${st.name} scored: ${st.score}`);
+   
+})
+
+console.log("---------");
+console.log("---------");
+console.log("STRETCH (optional)");
 
 
 
@@ -84,3 +117,10 @@ const students = [
    ------------------------------------------------------------ */
 
 // ✍️ Stretch: solve it here ✍️
+
+students.forEach((student)=>{
+   if(student.score >= 70 ){
+   console.log(`${student.name} scored: ${student.score}`);
+      
+   }
+})
